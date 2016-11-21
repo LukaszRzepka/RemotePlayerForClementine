@@ -1,1 +1,1 @@
-# Clementine-iOS-Remote ^^
+# RemotePlayer for Clementine iOS ^^
