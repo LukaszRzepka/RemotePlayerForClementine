@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		059B4E98012DEF1BDDDA2A65 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050C46302727DA5111A532C6 /* Pods.framework */; };
+		F366743A1D03747900E37BE2 /* VCMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674391D03747900E37BE2 /* VCMediaPlayer.m */; };
+		F36674401D03801C00E37BE2 /* ConnectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F366743F1D03801C00E37BE2 /* ConnectionInfo.m */; };
+		F36674441D04877D00E37BE2 /* VCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674421D04877D00E37BE2 /* VCSlider.m */; };
+		F36674491D04879200E37BE2 /* VCPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674471D04879200E37BE2 /* VCPlayback.m */; };
+		F36674511D04BF2700E37BE2 /* ClementineSystemReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674501D04BF2700E37BE2 /* ClementineSystemReceiver.m */; };
+		F36674541D04E24100E37BE2 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674531D04E24100E37BE2 /* ServiceManager.m */; };
+		F36D5B191CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F36D5B181CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.m */; };
+		F371EE1A1CB968060014B2B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F371EE191CB968060014B2B2 /* main.m */; };
+		F371EE1D1CB968060014B2B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F371EE1C1CB968060014B2B2 /* AppDelegate.m */; };
+		F371EE201CB968060014B2B2 /* VCRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = F371EE1F1CB968060014B2B2 /* VCRoot.m */; };
+		F371EE231CB968070014B2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F371EE211CB968070014B2B2 /* Main.storyboard */; };
+		F371EE251CB968070014B2B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F371EE241CB968070014B2B2 /* Assets.xcassets */; };
+		F371EE281CB968070014B2B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F371EE261CB968070014B2B2 /* LaunchScreen.storyboard */; };
+		F371EE331CB968070014B2B2 /* Clementine_iOS_RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F371EE321CB968070014B2B2 /* Clementine_iOS_RemoteTests.m */; };
+		F371EE3E1CB968070014B2B2 /* Clementine_iOS_RemoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F371EE3D1CB968070014B2B2 /* Clementine_iOS_RemoteUITests.m */; };
+		F371EE4D1CB96AD80014B2B2 /* ClementineRemoteProtocolBuffer.proto in Resources */ = {isa = PBXBuildFile; fileRef = F371EE4C1CB96AD80014B2B2 /* ClementineRemoteProtocolBuffer.proto */; };
+		F371EE501CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.m in Sources */ = {isa = PBXBuildFile; fileRef = F371EE4F1CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.m */; };
+		F379359D1CE8B6F1007EB6AA /* ClementineConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F379358E1CE8B6F1007EB6AA /* ClementineConnection.m */; };
+		F379359E1CE8B6F1007EB6AA /* ClementineMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F37935901CE8B6F1007EB6AA /* ClementineMessage.m */; };
+		F379359F1CE8B6F1007EB6AA /* ClementineMessageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F37935921CE8B6F1007EB6AA /* ClementineMessageFactory.m */; };
+		F37935A11CE8B6F1007EB6AA /* ClementineSocketMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F37935971CE8B6F1007EB6AA /* ClementineSocketMessageManager.m */; };
+		F37935A21CE8B6F1007EB6AA /* SocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F379359A1CE8B6F1007EB6AA /* SocketConnection.m */; };
+		F37935A31CE8B6F1007EB6AA /* SocketQueueConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F379359C1CE8B6F1007EB6AA /* SocketQueueConnection.m */; };
+		F39128DB1CF8743300477616 /* RemotePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F39128DA1CF8743300477616 /* RemotePlayer.m */; };
+		F398388A1D08826B00839950 /* VCVolumeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F39838891D08826B00839950 /* VCVolumeControl.m */; };
+		F39838911D08BEF100839950 /* ClementinePlaylistReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F39838901D08BEF100839950 /* ClementinePlaylistReceiver.m */; };
+		F39838941D08BF0400839950 /* ClementinePlaylistSender.m in Sources */ = {isa = PBXBuildFile; fileRef = F39838931D08BF0400839950 /* ClementinePlaylistSender.m */; };
+		F39838971D0914EF00839950 /* VCTablePlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = F39838961D0914EF00839950 /* VCTablePlaylist.m */; };
+		F398389A1D09159B00839950 /* VPlaylistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F39838991D09159B00839950 /* VPlaylistCell.m */; };
+		F3BB515A1CF883C100F32857 /* RemoteSong.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB51591CF883C100F32857 /* RemoteSong.m */; };
+		F3BB515D1CF88C9600F32857 /* RemotePlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB515C1CF88C9600F32857 /* RemotePlaylist.m */; };
+		F3BB51601CF8CD4700F32857 /* ClementinePlayerReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB515F1CF8CD4700F32857 /* ClementinePlayerReceiver.m */; };
+		F3BB51631CF8CDA100F32857 /* RemotePlaylistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB51621CF8CDA100F32857 /* RemotePlaylistManager.m */; };
+		F3BB51691CF9EC1500F32857 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BB51681CF9EC1500F32857 /* Constants.m */; };
+		F3D305861CFF8A5A005D54AC /* ClementinePlayerSender.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D305851CFF8A5A005D54AC /* ClementinePlayerSender.m */; };
+		F3E8947C1D48071E005536F7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8947B1D48071E005536F7 /* SWRevealViewController.m */; };
+		F3E8947F1D480B7A005536F7 /* MenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8947E1D480B7A005536F7 /* MenuVC.m */; };
+		F3E894821D480E27005536F7 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E894811D480E27005536F7 /* SettingsVC.m */; };
+		F3E894851D480E76005536F7 /* LibraryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E894841D480E76005536F7 /* LibraryVC.m */; };
+		F3E894881D481B82005536F7 /* NavigationTB.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E894871D481B82005536F7 /* NavigationTB.m */; };
+		F3E894961D57D100005536F7 /* RemoteLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E894951D57D100005536F7 /* RemoteLibraryManager.m */; };
+		F3E894991D57D10F005536F7 /* RemoteLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E894981D57D10F005536F7 /* RemoteLibrary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F371EE2F1CB968070014B2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F371EE0D1CB968060014B2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F371EE141CB968060014B2B2;
+			remoteInfo = "Clementine-iOS-Remote";
+		};
+		F371EE3A1CB968070014B2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F371EE0D1CB968060014B2B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F371EE141CB968060014B2B2;
+			remoteInfo = "Clementine-iOS-Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050C46302727DA5111A532C6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76061AF0703F05E04ED159CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8431FCF4D832B40B891CC337 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F36674381D03747900E37BE2 /* VCMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMediaPlayer.h; sourceTree = "<group>"; };
+		F36674391D03747900E37BE2 /* VCMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMediaPlayer.m; sourceTree = "<group>"; };
+		F366743E1D03801C00E37BE2 /* ConnectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionInfo.h; sourceTree = "<group>"; };
+		F366743F1D03801C00E37BE2 /* ConnectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionInfo.m; sourceTree = "<group>"; };
+		F36674411D04877D00E37BE2 /* VCSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSlider.h; sourceTree = "<group>"; };
+		F36674421D04877D00E37BE2 /* VCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSlider.m; sourceTree = "<group>"; };
+		F36674461D04879200E37BE2 /* VCPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCPlayback.h; sourceTree = "<group>"; };
+		F36674471D04879200E37BE2 /* VCPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCPlayback.m; sourceTree = "<group>"; };
+		F366744F1D04BF2700E37BE2 /* ClementineSystemReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementineSystemReceiver.h; sourceTree = "<group>"; };
+		F36674501D04BF2700E37BE2 /* ClementineSystemReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementineSystemReceiver.m; sourceTree = "<group>"; };
+		F36674521D04E24100E37BE2 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
+		F36674531D04E24100E37BE2 /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceManager.m; sourceTree = "<group>"; };
+		F36D5B171CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		F36D5B181CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		F371EE151CB968060014B2B2 /* Clementine-iOS-Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clementine-iOS-Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F371EE191CB968060014B2B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F371EE1B1CB968060014B2B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F371EE1C1CB968060014B2B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F371EE1E1CB968060014B2B2 /* VCRoot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCRoot.h; sourceTree = "<group>"; };
+		F371EE1F1CB968060014B2B2 /* VCRoot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCRoot.m; sourceTree = "<group>"; };
+		F371EE221CB968070014B2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F371EE241CB968070014B2B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F371EE271CB968070014B2B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F371EE291CB968070014B2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F371EE2E1CB968070014B2B2 /* Clementine-iOS-RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clementine-iOS-RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F371EE321CB968070014B2B2 /* Clementine_iOS_RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clementine_iOS_RemoteTests.m; sourceTree = "<group>"; };
+		F371EE341CB968070014B2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F371EE391CB968070014B2B2 /* Clementine-iOS-RemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clementine-iOS-RemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F371EE3D1CB968070014B2B2 /* Clementine_iOS_RemoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clementine_iOS_RemoteUITests.m; sourceTree = "<group>"; };
+		F371EE3F1CB968070014B2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F371EE4C1CB96AD80014B2B2 /* ClementineRemoteProtocolBuffer.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClementineRemoteProtocolBuffer.proto; sourceTree = "<group>"; };
+		F371EE4E1CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementineRemoteProtocolBuffer.pb.h; sourceTree = "<group>"; };
+		F371EE4F1CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementineRemoteProtocolBuffer.pb.m; sourceTree = "<group>"; };
+		F379358D1CE8B6F1007EB6AA /* ClementineConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementineConnection.h; sourceTree = "<group>"; };
+		F379358E1CE8B6F1007EB6AA /* ClementineConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementineConnection.m; sourceTree = "<group>"; };
+		F379358F1CE8B6F1007EB6AA /* ClementineMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementineMessage.h; sourceTree = "<group>"; };
+		F37935901CE8B6F1007EB6AA /* ClementineMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementineMessage.m; sourceTree = "<group>"; };
+		F37935911CE8B6F1007EB6AA /* ClementineMessageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementineMessageFactory.h; sourceTree = "<group>"; };
+		F37935921CE8B6F1007EB6AA /* ClementineMessageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementineMessageFactory.m; sourceTree = "<group>"; };
+		F37935961CE8B6F1007EB6AA /* ClementineSocketMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementineSocketMessageManager.h; sourceTree = "<group>"; };
+		F37935971CE8B6F1007EB6AA /* ClementineSocketMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementineSocketMessageManager.m; sourceTree = "<group>"; };
+		F37935991CE8B6F1007EB6AA /* SocketConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketConnection.h; sourceTree = "<group>"; };
+		F379359A1CE8B6F1007EB6AA /* SocketConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketConnection.m; sourceTree = "<group>"; };
+		F379359B1CE8B6F1007EB6AA /* SocketQueueConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketQueueConnection.h; sourceTree = "<group>"; };
+		F379359C1CE8B6F1007EB6AA /* SocketQueueConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketQueueConnection.m; sourceTree = "<group>"; };
+		F37935A41CE8B74E007EB6AA /* SocketConnectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketConnectionProtocol.h; sourceTree = "<group>"; };
+		F39128D91CF8743300477616 /* RemotePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemotePlayer.h; sourceTree = "<group>"; };
+		F39128DA1CF8743300477616 /* RemotePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemotePlayer.m; sourceTree = "<group>"; };
+		F39838881D08826B00839950 /* VCVolumeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCVolumeControl.h; sourceTree = "<group>"; };
+		F39838891D08826B00839950 /* VCVolumeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCVolumeControl.m; sourceTree = "<group>"; };
+		F398388B1D08AF7E00839950 /* PlaylistSenderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistSenderServiceProtocol.h; sourceTree = "<group>"; };
+		F398388C1D08AFA200839950 /* PlaylistReceiverServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistReceiverServiceProtocol.h; sourceTree = "<group>"; };
+		F398388F1D08BEF100839950 /* ClementinePlaylistReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementinePlaylistReceiver.h; sourceTree = "<group>"; };
+		F39838901D08BEF100839950 /* ClementinePlaylistReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementinePlaylistReceiver.m; sourceTree = "<group>"; };
+		F39838921D08BF0400839950 /* ClementinePlaylistSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementinePlaylistSender.h; sourceTree = "<group>"; };
+		F39838931D08BF0400839950 /* ClementinePlaylistSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementinePlaylistSender.m; sourceTree = "<group>"; };
+		F39838951D0914EF00839950 /* VCTablePlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTablePlaylist.h; sourceTree = "<group>"; };
+		F39838961D0914EF00839950 /* VCTablePlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTablePlaylist.m; sourceTree = "<group>"; };
+		F39838981D09159B00839950 /* VPlaylistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPlaylistCell.h; sourceTree = "<group>"; };
+		F39838991D09159B00839950 /* VPlaylistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPlaylistCell.m; sourceTree = "<group>"; };
+		F3BB51581CF883C100F32857 /* RemoteSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteSong.h; sourceTree = "<group>"; };
+		F3BB51591CF883C100F32857 /* RemoteSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteSong.m; sourceTree = "<group>"; };
+		F3BB515B1CF88C9600F32857 /* RemotePlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemotePlaylist.h; sourceTree = "<group>"; };
+		F3BB515C1CF88C9600F32857 /* RemotePlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemotePlaylist.m; sourceTree = "<group>"; };
+		F3BB515E1CF8CD4700F32857 /* ClementinePlayerReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementinePlayerReceiver.h; sourceTree = "<group>"; };
+		F3BB515F1CF8CD4700F32857 /* ClementinePlayerReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementinePlayerReceiver.m; sourceTree = "<group>"; };
+		F3BB51611CF8CDA100F32857 /* RemotePlaylistManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemotePlaylistManager.h; sourceTree = "<group>"; };
+		F3BB51621CF8CDA100F32857 /* RemotePlaylistManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemotePlaylistManager.m; sourceTree = "<group>"; };
+		F3BB51641CF9EBD800F32857 /* PlayerSenderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerSenderServiceProtocol.h; sourceTree = "<group>"; };
+		F3BB51671CF9EC1500F32857 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F3BB51681CF9EC1500F32857 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		F3BB516D1CFB2E1800F32857 /* PlayerReceiverServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerReceiverServiceProtocol.h; sourceTree = "<group>"; };
+		F3BB51721CFB33D400F32857 /* SystemReceiverServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemReceiverServiceProtocol.h; sourceTree = "<group>"; };
+		F3D305831CFB4BAC005D54AC /* RemoteConnectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteConnectionDelegate.h; sourceTree = "<group>"; };
+		F3D305841CFF8A5A005D54AC /* ClementinePlayerSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClementinePlayerSender.h; sourceTree = "<group>"; };
+		F3D305851CFF8A5A005D54AC /* ClementinePlayerSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClementinePlayerSender.m; sourceTree = "<group>"; };
+		F3E8947A1D48071E005536F7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F3E8947B1D48071E005536F7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F3E8947D1D480B7A005536F7 /* MenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuVC.h; sourceTree = "<group>"; };
+		F3E8947E1D480B7A005536F7 /* MenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuVC.m; sourceTree = "<group>"; };
+		F3E894801D480E27005536F7 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		F3E894811D480E27005536F7 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		F3E894831D480E76005536F7 /* LibraryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryVC.h; sourceTree = "<group>"; };
+		F3E894841D480E76005536F7 /* LibraryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryVC.m; sourceTree = "<group>"; };
+		F3E894861D481B82005536F7 /* NavigationTB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTB.h; sourceTree = "<group>"; };
+		F3E894871D481B82005536F7 /* NavigationTB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTB.m; sourceTree = "<group>"; };
+		F3E894921D57CE57005536F7 /* LibrarySenderServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibrarySenderServiceProtocol.h; sourceTree = "<group>"; };
+		F3E894931D57D028005536F7 /* LibraryReceiverServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryReceiverServiceProtocol.h; sourceTree = "<group>"; };
+		F3E894941D57D100005536F7 /* RemoteLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteLibraryManager.h; sourceTree = "<group>"; };
+		F3E894951D57D100005536F7 /* RemoteLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteLibraryManager.m; sourceTree = "<group>"; };
+		F3E894971D57D10F005536F7 /* RemoteLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteLibrary.h; sourceTree = "<group>"; };
+		F3E894981D57D10F005536F7 /* RemoteLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteLibrary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F371EE121CB968060014B2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059B4E98012DEF1BDDDA2A65 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F371EE2B1CB968070014B2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F371EE361CB968070014B2B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D61C0A140D87071AA48952F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				050C46302727DA5111A532C6 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAEFA0F048272223A22EDB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76061AF0703F05E04ED159CC /* Pods.debug.xcconfig */,
+				8431FCF4D832B40B891CC337 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F366744B1D0487B800E37BE2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3E894791D48071E005536F7 /* SWRevealViewController */,
+				F36674461D04879200E37BE2 /* VCPlayback.h */,
+				F36674471D04879200E37BE2 /* VCPlayback.m */,
+				F36674411D04877D00E37BE2 /* VCSlider.h */,
+				F36674421D04877D00E37BE2 /* VCSlider.m */,
+				F39838951D0914EF00839950 /* VCTablePlaylist.h */,
+				F39838961D0914EF00839950 /* VCTablePlaylist.m */,
+				F36674381D03747900E37BE2 /* VCMediaPlayer.h */,
+				F36674391D03747900E37BE2 /* VCMediaPlayer.m */,
+				F371EE1E1CB968060014B2B2 /* VCRoot.h */,
+				F371EE1F1CB968060014B2B2 /* VCRoot.m */,
+				F39838881D08826B00839950 /* VCVolumeControl.h */,
+				F39838891D08826B00839950 /* VCVolumeControl.m */,
+				F39838981D09159B00839950 /* VPlaylistCell.h */,
+				F39838991D09159B00839950 /* VPlaylistCell.m */,
+				F3E8947D1D480B7A005536F7 /* MenuVC.h */,
+				F3E8947E1D480B7A005536F7 /* MenuVC.m */,
+				F3E894801D480E27005536F7 /* SettingsVC.h */,
+				F3E894811D480E27005536F7 /* SettingsVC.m */,
+				F3E894831D480E76005536F7 /* LibraryVC.h */,
+				F3E894841D480E76005536F7 /* LibraryVC.m */,
+				F3E894861D481B82005536F7 /* NavigationTB.h */,
+				F3E894871D481B82005536F7 /* NavigationTB.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F36D5B161CD67A6600E2EDA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F36D5B171CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.h */,
+				F36D5B181CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.m */,
+				F366743E1D03801C00E37BE2 /* ConnectionInfo.h */,
+				F366743F1D03801C00E37BE2 /* ConnectionInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F371EE0C1CB968060014B2B2 = {
+			isa = PBXGroup;
+			children = (
+				F371EE171CB968060014B2B2 /* Clementine-iOS-Remote */,
+				F371EE311CB968070014B2B2 /* Clementine-iOS-RemoteTests */,
+				F371EE3C1CB968070014B2B2 /* Clementine-iOS-RemoteUITests */,
+				F3E8948F1D57A290005536F7 /* Resources */,
+				F371EE161CB968060014B2B2 /* Products */,
+				EAEFA0F048272223A22EDB8F /* Pods */,
+				5D61C0A140D87071AA48952F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F371EE161CB968060014B2B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F371EE151CB968060014B2B2 /* Clementine-iOS-Remote.app */,
+				F371EE2E1CB968070014B2B2 /* Clementine-iOS-RemoteTests.xctest */,
+				F371EE391CB968070014B2B2 /* Clementine-iOS-RemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F371EE171CB968060014B2B2 /* Clementine-iOS-Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB51671CF9EC1500F32857 /* Constants.h */,
+				F3BB51681CF9EC1500F32857 /* Constants.m */,
+				F3BB51701CFB2FAF00F32857 /* Protocols */,
+				F3BB51571CF883A000F32857 /* Player */,
+				F36D5B161CD67A6600E2EDA6 /* Model */,
+				F371EE511CB96DF80014B2B2 /* Connection */,
+				F371EE4B1CB96AA90014B2B2 /* ProtocolBuffers */,
+				F366744B1D0487B800E37BE2 /* ViewControllers */,
+				F371EE1B1CB968060014B2B2 /* AppDelegate.h */,
+				F371EE1C1CB968060014B2B2 /* AppDelegate.m */,
+				F371EE211CB968070014B2B2 /* Main.storyboard */,
+				F371EE241CB968070014B2B2 /* Assets.xcassets */,
+				F371EE261CB968070014B2B2 /* LaunchScreen.storyboard */,
+				F371EE291CB968070014B2B2 /* Info.plist */,
+				F371EE181CB968060014B2B2 /* Supporting Files */,
+			);
+			path = "Clementine-iOS-Remote";
+			sourceTree = "<group>";
+		};
+		F371EE181CB968060014B2B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F371EE191CB968060014B2B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F371EE311CB968070014B2B2 /* Clementine-iOS-RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F371EE321CB968070014B2B2 /* Clementine_iOS_RemoteTests.m */,
+				F371EE341CB968070014B2B2 /* Info.plist */,
+			);
+			path = "Clementine-iOS-RemoteTests";
+			sourceTree = "<group>";
+		};
+		F371EE3C1CB968070014B2B2 /* Clementine-iOS-RemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F371EE3D1CB968070014B2B2 /* Clementine_iOS_RemoteUITests.m */,
+				F371EE3F1CB968070014B2B2 /* Info.plist */,
+			);
+			path = "Clementine-iOS-RemoteUITests";
+			sourceTree = "<group>";
+		};
+		F371EE4B1CB96AA90014B2B2 /* ProtocolBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				F371EE4E1CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.h */,
+				F371EE4F1CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.m */,
+				F371EE4C1CB96AD80014B2B2 /* ClementineRemoteProtocolBuffer.proto */,
+			);
+			name = ProtocolBuffers;
+			sourceTree = "<group>";
+		};
+		F371EE511CB96DF80014B2B2 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				F379358C1CE8B6F1007EB6AA /* ClementineConnection */,
+				F37935981CE8B6F1007EB6AA /* SocketConnection */,
+				F36674521D04E24100E37BE2 /* ServiceManager.h */,
+				F36674531D04E24100E37BE2 /* ServiceManager.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		F379358C1CE8B6F1007EB6AA /* ClementineConnection */ = {
+			isa = PBXGroup;
+			children = (
+				F3D305871CFF8AD8005D54AC /* Comunication */,
+				F379358D1CE8B6F1007EB6AA /* ClementineConnection.h */,
+				F379358E1CE8B6F1007EB6AA /* ClementineConnection.m */,
+				F379358F1CE8B6F1007EB6AA /* ClementineMessage.h */,
+				F37935901CE8B6F1007EB6AA /* ClementineMessage.m */,
+				F37935911CE8B6F1007EB6AA /* ClementineMessageFactory.h */,
+				F37935921CE8B6F1007EB6AA /* ClementineMessageFactory.m */,
+				F37935961CE8B6F1007EB6AA /* ClementineSocketMessageManager.h */,
+				F37935971CE8B6F1007EB6AA /* ClementineSocketMessageManager.m */,
+			);
+			name = ClementineConnection;
+			path = Connection/ClementineConnection;
+			sourceTree = "<group>";
+		};
+		F37935981CE8B6F1007EB6AA /* SocketConnection */ = {
+			isa = PBXGroup;
+			children = (
+				F37935A41CE8B74E007EB6AA /* SocketConnectionProtocol.h */,
+				F37935991CE8B6F1007EB6AA /* SocketConnection.h */,
+				F379359A1CE8B6F1007EB6AA /* SocketConnection.m */,
+				F379359B1CE8B6F1007EB6AA /* SocketQueueConnection.h */,
+				F379359C1CE8B6F1007EB6AA /* SocketQueueConnection.m */,
+			);
+			name = SocketConnection;
+			path = Connection/SocketConnection;
+			sourceTree = "<group>";
+		};
+		F398388D1D08BD8700839950 /* Senders */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB51641CF9EBD800F32857 /* PlayerSenderServiceProtocol.h */,
+				F398388B1D08AF7E00839950 /* PlaylistSenderServiceProtocol.h */,
+				F3E894921D57CE57005536F7 /* LibrarySenderServiceProtocol.h */,
+			);
+			name = Senders;
+			sourceTree = "<group>";
+		};
+		F398388E1D08BD9900839950 /* Receivers */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB516D1CFB2E1800F32857 /* PlayerReceiverServiceProtocol.h */,
+				F3BB51721CFB33D400F32857 /* SystemReceiverServiceProtocol.h */,
+				F398388C1D08AFA200839950 /* PlaylistReceiverServiceProtocol.h */,
+				F3E894931D57D028005536F7 /* LibraryReceiverServiceProtocol.h */,
+			);
+			name = Receivers;
+			sourceTree = "<group>";
+		};
+		F3BB51571CF883A000F32857 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F39128D91CF8743300477616 /* RemotePlayer.h */,
+				F39128DA1CF8743300477616 /* RemotePlayer.m */,
+				F3BB515B1CF88C9600F32857 /* RemotePlaylist.h */,
+				F3BB515C1CF88C9600F32857 /* RemotePlaylist.m */,
+				F3BB51611CF8CDA100F32857 /* RemotePlaylistManager.h */,
+				F3BB51621CF8CDA100F32857 /* RemotePlaylistManager.m */,
+				F3BB51581CF883C100F32857 /* RemoteSong.h */,
+				F3BB51591CF883C100F32857 /* RemoteSong.m */,
+				F3E894971D57D10F005536F7 /* RemoteLibrary.h */,
+				F3E894981D57D10F005536F7 /* RemoteLibrary.m */,
+				F3E894941D57D100005536F7 /* RemoteLibraryManager.h */,
+				F3E894951D57D100005536F7 /* RemoteLibraryManager.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		F3BB51701CFB2FAF00F32857 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F398388E1D08BD9900839950 /* Receivers */,
+				F398388D1D08BD8700839950 /* Senders */,
+				F3D305831CFB4BAC005D54AC /* RemoteConnectionDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F3D305871CFF8AD8005D54AC /* Comunication */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB515E1CF8CD4700F32857 /* ClementinePlayerReceiver.h */,
+				F3BB515F1CF8CD4700F32857 /* ClementinePlayerReceiver.m */,
+				F3D305841CFF8A5A005D54AC /* ClementinePlayerSender.h */,
+				F3D305851CFF8A5A005D54AC /* ClementinePlayerSender.m */,
+				F398388F1D08BEF100839950 /* ClementinePlaylistReceiver.h */,
+				F39838901D08BEF100839950 /* ClementinePlaylistReceiver.m */,
+				F366744F1D04BF2700E37BE2 /* ClementineSystemReceiver.h */,
+				F36674501D04BF2700E37BE2 /* ClementineSystemReceiver.m */,
+				F39838921D08BF0400839950 /* ClementinePlaylistSender.h */,
+				F39838931D08BF0400839950 /* ClementinePlaylistSender.m */,
+			);
+			name = Comunication;
+			sourceTree = "<group>";
+		};
+		F3E894791D48071E005536F7 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F3E8947A1D48071E005536F7 /* SWRevealViewController.h */,
+				F3E8947B1D48071E005536F7 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		F3E8948F1D57A290005536F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F371EE141CB968060014B2B2 /* Clementine-iOS-Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F371EE421CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-Remote" */;
+			buildPhases = (
+				1787C21F21A9B6A38E524378 /* Check Pods Manifest.lock */,
+				F371EE111CB968060014B2B2 /* Sources */,
+				F371EE121CB968060014B2B2 /* Frameworks */,
+				F371EE131CB968060014B2B2 /* Resources */,
+				E5ACEA66B9261835E57DBC8C /* Embed Pods Frameworks */,
+				9D3134BC22A9492427C62ABF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clementine-iOS-Remote";
+			productName = "Clementine-iOS-Remote";
+			productReference = F371EE151CB968060014B2B2 /* Clementine-iOS-Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F371EE2D1CB968070014B2B2 /* Clementine-iOS-RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F371EE451CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-RemoteTests" */;
+			buildPhases = (
+				F371EE2A1CB968070014B2B2 /* Sources */,
+				F371EE2B1CB968070014B2B2 /* Frameworks */,
+				F371EE2C1CB968070014B2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F371EE301CB968070014B2B2 /* PBXTargetDependency */,
+			);
+			name = "Clementine-iOS-RemoteTests";
+			productName = "Clementine-iOS-RemoteTests";
+			productReference = F371EE2E1CB968070014B2B2 /* Clementine-iOS-RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F371EE381CB968070014B2B2 /* Clementine-iOS-RemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F371EE481CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-RemoteUITests" */;
+			buildPhases = (
+				F371EE351CB968070014B2B2 /* Sources */,
+				F371EE361CB968070014B2B2 /* Frameworks */,
+				F371EE371CB968070014B2B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F371EE3B1CB968070014B2B2 /* PBXTargetDependency */,
+			);
+			name = "Clementine-iOS-RemoteUITests";
+			productName = "Clementine-iOS-RemoteUITests";
+			productReference = F371EE391CB968070014B2B2 /* Clementine-iOS-RemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F371EE0D1CB968060014B2B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Lukasz Rzepka";
+				TargetAttributes = {
+					F371EE141CB968060014B2B2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K8P2LT5NV2;
+					};
+					F371EE2D1CB968070014B2B2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K8P2LT5NV2;
+						TestTargetID = F371EE141CB968060014B2B2;
+					};
+					F371EE381CB968070014B2B2 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K8P2LT5NV2;
+						TestTargetID = F371EE141CB968060014B2B2;
+					};
+				};
+			};
+			buildConfigurationList = F371EE101CB968060014B2B2 /* Build configuration list for PBXProject "Clementine-iOS-Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F371EE0C1CB968060014B2B2;
+			productRefGroup = F371EE161CB968060014B2B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F371EE141CB968060014B2B2 /* Clementine-iOS-Remote */,
+				F371EE2D1CB968070014B2B2 /* Clementine-iOS-RemoteTests */,
+				F371EE381CB968070014B2B2 /* Clementine-iOS-RemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F371EE131CB968060014B2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F371EE281CB968070014B2B2 /* LaunchScreen.storyboard in Resources */,
+				F371EE251CB968070014B2B2 /* Assets.xcassets in Resources */,
+				F371EE4D1CB96AD80014B2B2 /* ClementineRemoteProtocolBuffer.proto in Resources */,
+				F371EE231CB968070014B2B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F371EE2C1CB968070014B2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F371EE371CB968070014B2B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1787C21F21A9B6A38E524378 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3134BC22A9492427C62ABF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5ACEA66B9261835E57DBC8C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F371EE111CB968060014B2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BB515A1CF883C100F32857 /* RemoteSong.m in Sources */,
+				F371EE201CB968060014B2B2 /* VCRoot.m in Sources */,
+				F3E8947F1D480B7A005536F7 /* MenuVC.m in Sources */,
+				F3D305861CFF8A5A005D54AC /* ClementinePlayerSender.m in Sources */,
+				F39128DB1CF8743300477616 /* RemotePlayer.m in Sources */,
+				F371EE1D1CB968060014B2B2 /* AppDelegate.m in Sources */,
+				F37935A21CE8B6F1007EB6AA /* SocketConnection.m in Sources */,
+				F36D5B191CD67A9F00E2EDA6 /* NSMutableArray+QueueAdditions.m in Sources */,
+				F39838971D0914EF00839950 /* VCTablePlaylist.m in Sources */,
+				F36674401D03801C00E37BE2 /* ConnectionInfo.m in Sources */,
+				F3BB515D1CF88C9600F32857 /* RemotePlaylist.m in Sources */,
+				F3E894961D57D100005536F7 /* RemoteLibraryManager.m in Sources */,
+				F39838911D08BEF100839950 /* ClementinePlaylistReceiver.m in Sources */,
+				F371EE501CB96CB50014B2B2 /* ClementineRemoteProtocolBuffer.pb.m in Sources */,
+				F36674511D04BF2700E37BE2 /* ClementineSystemReceiver.m in Sources */,
+				F379359F1CE8B6F1007EB6AA /* ClementineMessageFactory.m in Sources */,
+				F3BB51631CF8CDA100F32857 /* RemotePlaylistManager.m in Sources */,
+				F3BB51601CF8CD4700F32857 /* ClementinePlayerReceiver.m in Sources */,
+				F3E894821D480E27005536F7 /* SettingsVC.m in Sources */,
+				F371EE1A1CB968060014B2B2 /* main.m in Sources */,
+				F3E894881D481B82005536F7 /* NavigationTB.m in Sources */,
+				F3E8947C1D48071E005536F7 /* SWRevealViewController.m in Sources */,
+				F36674491D04879200E37BE2 /* VCPlayback.m in Sources */,
+				F36674441D04877D00E37BE2 /* VCSlider.m in Sources */,
+				F37935A11CE8B6F1007EB6AA /* ClementineSocketMessageManager.m in Sources */,
+				F37935A31CE8B6F1007EB6AA /* SocketQueueConnection.m in Sources */,
+				F36674541D04E24100E37BE2 /* ServiceManager.m in Sources */,
+				F398389A1D09159B00839950 /* VPlaylistCell.m in Sources */,
+				F379359D1CE8B6F1007EB6AA /* ClementineConnection.m in Sources */,
+				F398388A1D08826B00839950 /* VCVolumeControl.m in Sources */,
+				F39838941D08BF0400839950 /* ClementinePlaylistSender.m in Sources */,
+				F379359E1CE8B6F1007EB6AA /* ClementineMessage.m in Sources */,
+				F366743A1D03747900E37BE2 /* VCMediaPlayer.m in Sources */,
+				F3E894851D480E76005536F7 /* LibraryVC.m in Sources */,
+				F3BB51691CF9EC1500F32857 /* Constants.m in Sources */,
+				F3E894991D57D10F005536F7 /* RemoteLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F371EE2A1CB968070014B2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F371EE331CB968070014B2B2 /* Clementine_iOS_RemoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F371EE351CB968070014B2B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F371EE3E1CB968070014B2B2 /* Clementine_iOS_RemoteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F371EE301CB968070014B2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F371EE141CB968060014B2B2 /* Clementine-iOS-Remote */;
+			targetProxy = F371EE2F1CB968070014B2B2 /* PBXContainerItemProxy */;
+		};
+		F371EE3B1CB968070014B2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F371EE141CB968060014B2B2 /* Clementine-iOS-Remote */;
+			targetProxy = F371EE3A1CB968070014B2B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F371EE211CB968070014B2B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F371EE221CB968070014B2B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F371EE261CB968070014B2B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F371EE271CB968070014B2B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F371EE401CB968070014B2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F371EE411CB968070014B2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F371EE431CB968070014B2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76061AF0703F05E04ED159CC /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "Clementine-iOS-Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Clementine-iOS-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F371EE441CB968070014B2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8431FCF4D832B40B891CC337 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "Clementine-iOS-Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Clementine-iOS-Remote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F371EE461CB968070014B2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Clementine-iOS-RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Clementine-iOS-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clementine-iOS-Remote.app/Clementine-iOS-Remote";
+			};
+			name = Debug;
+		};
+		F371EE471CB968070014B2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Clementine-iOS-RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Clementine-iOS-RemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clementine-iOS-Remote.app/Clementine-iOS-Remote";
+			};
+			name = Release;
+		};
+		F371EE491CB968070014B2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Clementine-iOS-RemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Clementine-iOS-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Clementine-iOS-Remote";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F371EE4A1CB968070014B2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Clementine-iOS-RemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.Clementine-iOS-RemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Clementine-iOS-Remote";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F371EE101CB968060014B2B2 /* Build configuration list for PBXProject "Clementine-iOS-Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F371EE401CB968070014B2B2 /* Debug */,
+				F371EE411CB968070014B2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F371EE421CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F371EE431CB968070014B2B2 /* Debug */,
+				F371EE441CB968070014B2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F371EE451CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F371EE461CB968070014B2B2 /* Debug */,
+				F371EE471CB968070014B2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F371EE481CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-RemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F371EE491CB968070014B2B2 /* Debug */,
+				F371EE4A1CB968070014B2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F371EE0D1CB968060014B2B2 /* Project object */;
+}
