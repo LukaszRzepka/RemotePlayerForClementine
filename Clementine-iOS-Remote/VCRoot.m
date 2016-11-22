@@ -51,6 +51,7 @@
         {
             self.tfAuth.text = [connectionInfo.auth stringValue];
         }
+        [self connectWithServer];
     }
 }
 
@@ -73,6 +74,10 @@
 
 - (IBAction)buttonConnectTouchUpInside:(id)sender
 {
+    [self connectWithServer];
+}
+
+- (void)connectWithServer {
     if (![self checkIfConnectionDataIsCorrect:self.tfIP.text andPort:self.tfPort.text andAuth:self.tfAuth.text]) {
         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Incorrect login data" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
@@ -92,13 +97,13 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [[ClementineConnection sharedInstance] connect];
     });
-
+    
     __weak typeof(self) weakSelf = self;
     self.connectionBlock = ^(void){
         typeof(self) strongSelf = weakSelf;
         [strongSelf checkIfIsConnected];
     };
-
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), self.connectionBlock);
 }
 
