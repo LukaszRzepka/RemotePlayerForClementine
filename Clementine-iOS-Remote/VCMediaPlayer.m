@@ -11,6 +11,7 @@
 
 @interface VCMediaPlayer ()
 @property (weak, nonatomic) IBOutlet UIImageView *uiImageViewCoverArt;
+@property (weak, nonatomic) IBOutlet UIImageView *uiImageViewBackground;
 @property (weak, nonatomic) IBOutlet UILabel *uiLabelSongTitle;
 @property (weak, nonatomic) IBOutlet UILabel *uiLabelSongArtist;
 @property (weak, nonatomic) IBOutlet UILabel *uiLabelSongAlbum;
@@ -50,6 +51,7 @@
     [self.uiLabelSongTitle setText:self.currentSong.title];
     [self.uiLabelSongArtist setText:self.currentSong.artist];
     [self.uiLabelSongAlbum setText:self.currentSong.album];
+    [self.uiImageViewBackground setImage:self.currentSong.art];
 }
 
 
