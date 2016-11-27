@@ -354,8 +354,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIR-1L-anu">
-                                <rect key="frame" x="0.0" y="0.0" width="383" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="383" height="534"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="MP2-md-aBa" kind="embed" id="MN0-Oq-qjL"/>
                                 </connections>
@@ -403,13 +404,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSg-iA-z9u">
-                                <rect key="frame" x="0.0" y="0.0" width="383" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="383" height="534"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3U-it-zNr">
-                                        <rect key="frame" x="0.0" y="210" width="383" height="344"/>
+                                        <rect key="frame" x="0.0" y="210" width="383" height="324"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwA-1X-0Sz">
-                                                <rect key="frame" x="0.0" y="84.5" width="383" height="175"/>
+                                                <rect key="frame" x="0.0" y="74.5" width="383" height="175"/>
                                                 <subviews>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vm7-ql-Nbi">
                                                         <rect key="frame" x="122.5" y="15" width="138" height="42"/>
@@ -513,7 +514,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" translatesAutoresizingMaskIntoConstraints="NO" id="r5N-FM-t0i">
-                                <rect key="frame" x="141.5" y="20" width="100" height="100"/>
+                                <rect key="frame" x="141.5" y="40" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="500" id="E2Q-dI-0Co"/>
@@ -523,7 +524,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="1" green="0.69219617899999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PFd-U0-ddc" firstAttribute="top" secondItem="r5N-FM-t0i" secondAttribute="bottom" constant="6" id="Dab-VB-0sO"/>
                             <constraint firstItem="CSg-iA-z9u" firstAttribute="width" secondItem="KBf-oR-Ge3" secondAttribute="width" id="G3c-kb-i4p"/>
@@ -714,10 +715,13 @@
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarController" id="dj9-DX-XBw" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="v2A-MO-ZhJ"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="gki-lj-AwV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="GZL-Bg-RFp" kind="relationship" relationship="viewControllers" id="wiv-wb-QiX"/>
@@ -879,7 +883,7 @@
             <objects>
                 <tableViewController id="MP2-md-aBa" customClass="VCTablePlaylist" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="eLI-2y-AEO">
-                        <rect key="frame" x="0.0" y="0.0" width="383" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="383" height="534"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1027,6 +1031,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="4cc-ED-rOa"/>
+        <segue reference="owR-mf-LFC"/>
     </inferredMetricsTieBreakers>
 </document>
