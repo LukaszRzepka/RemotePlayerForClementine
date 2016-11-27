@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		059B4E98012DEF1BDDDA2A65 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050C46302727DA5111A532C6 /* Pods.framework */; };
+		A3143E1C2BB455BC86D6B559 /* libPods-Clementine-iOS-Remote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D066663A3638ABDE1E7C81F /* libPods-Clementine-iOS-Remote.a */; };
+		AC9A67BB8081682EAD19AB8D /* libPods-Clementine-iOS-RemoteTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE643BB816A108AC6B46E9F /* libPods-Clementine-iOS-RemoteTests.a */; };
+		B6BCEF5101571FBB78B42488 /* libPods-Clementine-iOS-RemoteUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED309CB555A2EC7A337413EC /* libPods-Clementine-iOS-RemoteUITests.a */; };
 		F366743A1D03747900E37BE2 /* VCMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674391D03747900E37BE2 /* VCMediaPlayer.m */; };
 		F36674401D03801C00E37BE2 /* ConnectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F366743F1D03801C00E37BE2 /* ConnectionInfo.m */; };
 		F36674441D04877D00E37BE2 /* VCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F36674421D04877D00E37BE2 /* VCSlider.m */; };
@@ -71,8 +73,15 @@
 
 /* Begin PBXFileReference section */
 		050C46302727DA5111A532C6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76061AF0703F05E04ED159CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		8431FCF4D832B40B891CC337 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		081E5779E79BE5471A3E8541 /* Pods-Clementine-iOS-RemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clementine-iOS-RemoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clementine-iOS-RemoteUITests/Pods-Clementine-iOS-RemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2108F9A57F3AE91FC98D0076 /* Pods-Clementine-iOS-Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clementine-iOS-Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clementine-iOS-Remote/Pods-Clementine-iOS-Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		2D066663A3638ABDE1E7C81F /* libPods-Clementine-iOS-Remote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clementine-iOS-Remote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44439432B2C152C46C055AE2 /* Pods-Clementine-iOS-RemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clementine-iOS-RemoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clementine-iOS-RemoteUITests/Pods-Clementine-iOS-RemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		689CBF5B415F7B653489DC29 /* Pods-Clementine-iOS-RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clementine-iOS-RemoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clementine-iOS-RemoteTests/Pods-Clementine-iOS-RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		86130DB5B99AE12190BC3914 /* Pods-Clementine-iOS-Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clementine-iOS-Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clementine-iOS-Remote/Pods-Clementine-iOS-Remote.release.xcconfig"; sourceTree = "<group>"; };
+		8CE643BB816A108AC6B46E9F /* libPods-Clementine-iOS-RemoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clementine-iOS-RemoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF02D5C0EBFD2F689DAFF155 /* Pods-Clementine-iOS-RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clementine-iOS-RemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clementine-iOS-RemoteTests/Pods-Clementine-iOS-RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED309CB555A2EC7A337413EC /* libPods-Clementine-iOS-RemoteUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Clementine-iOS-RemoteUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36674381D03747900E37BE2 /* VCMediaPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMediaPlayer.h; sourceTree = "<group>"; };
 		F36674391D03747900E37BE2 /* VCMediaPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMediaPlayer.m; sourceTree = "<group>"; };
 		F366743E1D03801C00E37BE2 /* ConnectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionInfo.h; sourceTree = "<group>"; };
@@ -172,7 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				059B4E98012DEF1BDDDA2A65 /* Pods.framework in Frameworks */,
+				A3143E1C2BB455BC86D6B559 /* libPods-Clementine-iOS-Remote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9A67BB8081682EAD19AB8D /* libPods-Clementine-iOS-RemoteTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BCEF5101571FBB78B42488 /* libPods-Clementine-iOS-RemoteUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,15 +208,22 @@
 			isa = PBXGroup;
 			children = (
 				050C46302727DA5111A532C6 /* Pods.framework */,
+				2D066663A3638ABDE1E7C81F /* libPods-Clementine-iOS-Remote.a */,
+				8CE643BB816A108AC6B46E9F /* libPods-Clementine-iOS-RemoteTests.a */,
+				ED309CB555A2EC7A337413EC /* libPods-Clementine-iOS-RemoteUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EAEFA0F048272223A22EDB8F /* Pods */ = {
+		84CE90C51A27917F8623E8AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76061AF0703F05E04ED159CC /* Pods.debug.xcconfig */,
-				8431FCF4D832B40B891CC337 /* Pods.release.xcconfig */,
+				2108F9A57F3AE91FC98D0076 /* Pods-Clementine-iOS-Remote.debug.xcconfig */,
+				86130DB5B99AE12190BC3914 /* Pods-Clementine-iOS-Remote.release.xcconfig */,
+				BF02D5C0EBFD2F689DAFF155 /* Pods-Clementine-iOS-RemoteTests.debug.xcconfig */,
+				689CBF5B415F7B653489DC29 /* Pods-Clementine-iOS-RemoteTests.release.xcconfig */,
+				081E5779E79BE5471A3E8541 /* Pods-Clementine-iOS-RemoteUITests.debug.xcconfig */,
+				44439432B2C152C46C055AE2 /* Pods-Clementine-iOS-RemoteUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -259,8 +277,8 @@
 				F371EE3C1CB968070014B2B2 /* Clementine-iOS-RemoteUITests */,
 				F3E8948F1D57A290005536F7 /* Resources */,
 				F371EE161CB968060014B2B2 /* Products */,
-				EAEFA0F048272223A22EDB8F /* Pods */,
 				5D61C0A140D87071AA48952F /* Frameworks */,
+				84CE90C51A27917F8623E8AA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -463,12 +481,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F371EE421CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-Remote" */;
 			buildPhases = (
-				1787C21F21A9B6A38E524378 /* Check Pods Manifest.lock */,
+				E77E648A2EBBB7A0DA938B3F /* [CP] Check Pods Manifest.lock */,
 				F371EE111CB968060014B2B2 /* Sources */,
 				F371EE121CB968060014B2B2 /* Frameworks */,
 				F371EE131CB968060014B2B2 /* Resources */,
-				E5ACEA66B9261835E57DBC8C /* Embed Pods Frameworks */,
-				9D3134BC22A9492427C62ABF /* Copy Pods Resources */,
+				D8612B0CD9755B0E9DA66379 /* [CP] Embed Pods Frameworks */,
+				427B25DDB218A4E6C52A5259 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -483,9 +501,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F371EE451CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-RemoteTests" */;
 			buildPhases = (
+				EEBE7DFC08C33C47C3B0EC8A /* [CP] Check Pods Manifest.lock */,
 				F371EE2A1CB968070014B2B2 /* Sources */,
 				F371EE2B1CB968070014B2B2 /* Frameworks */,
 				F371EE2C1CB968070014B2B2 /* Resources */,
+				8451ED3B1AB383A3C5938A60 /* [CP] Embed Pods Frameworks */,
+				BFEE06B05BFA6C1710515249 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -501,9 +522,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F371EE481CB968070014B2B2 /* Build configuration list for PBXNativeTarget "Clementine-iOS-RemoteUITests" */;
 			buildPhases = (
+				2DE2A3AFD754C03E18C0A692 /* [CP] Check Pods Manifest.lock */,
 				F371EE351CB968070014B2B2 /* Sources */,
 				F371EE361CB968070014B2B2 /* Frameworks */,
 				F371EE371CB968070014B2B2 /* Resources */,
+				8EAF96AC7B8A7FFE9F44C8EE /* [CP] Embed Pods Frameworks */,
+				A3EE09A289ABFD76E12B7B30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -589,49 +613,139 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1787C21F21A9B6A38E524378 /* Check Pods Manifest.lock */ = {
+		2DE2A3AFD754C03E18C0A692 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9D3134BC22A9492427C62ABF /* Copy Pods Resources */ = {
+		427B25DDB218A4E6C52A5259 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clementine-iOS-Remote/Pods-Clementine-iOS-Remote-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E5ACEA66B9261835E57DBC8C /* Embed Pods Frameworks */ = {
+		8451ED3B1AB383A3C5938A60 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clementine-iOS-RemoteTests/Pods-Clementine-iOS-RemoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EAF96AC7B8A7FFE9F44C8EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clementine-iOS-RemoteUITests/Pods-Clementine-iOS-RemoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3EE09A289ABFD76E12B7B30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clementine-iOS-RemoteUITests/Pods-Clementine-iOS-RemoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEE06B05BFA6C1710515249 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clementine-iOS-RemoteTests/Pods-Clementine-iOS-RemoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8612B0CD9755B0E9DA66379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clementine-iOS-Remote/Pods-Clementine-iOS-Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77E648A2EBBB7A0DA938B3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBE7DFC08C33C47C3B0EC8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -815,7 +929,7 @@
 		};
 		F371EE431CB968070014B2B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76061AF0703F05E04ED159CC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 2108F9A57F3AE91FC98D0076 /* Pods-Clementine-iOS-Remote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -829,7 +943,7 @@
 		};
 		F371EE441CB968070014B2B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8431FCF4D832B40B891CC337 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 86130DB5B99AE12190BC3914 /* Pods-Clementine-iOS-Remote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -843,6 +957,7 @@
 		};
 		F371EE461CB968070014B2B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF02D5C0EBFD2F689DAFF155 /* Pods-Clementine-iOS-RemoteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Clementine-iOS-RemoteTests/Info.plist";
@@ -855,6 +970,7 @@
 		};
 		F371EE471CB968070014B2B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689CBF5B415F7B653489DC29 /* Pods-Clementine-iOS-RemoteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Clementine-iOS-RemoteTests/Info.plist";
@@ -867,6 +983,7 @@
 		};
 		F371EE491CB968070014B2B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081E5779E79BE5471A3E8541 /* Pods-Clementine-iOS-RemoteUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Clementine-iOS-RemoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -879,6 +996,7 @@
 		};
 		F371EE4A1CB968070014B2B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44439432B2C152C46C055AE2 /* Pods-Clementine-iOS-RemoteUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Clementine-iOS-RemoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
