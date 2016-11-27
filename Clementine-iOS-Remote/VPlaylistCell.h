@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelArtist;
 @property (weak, nonatomic) IBOutlet UILabel *labelPosition;
 @property (weak, nonatomic) IBOutlet UILabel *labelLenght;
+
+- (void)setAllLabelsTextColorTo:(UIColor*)color;
 @end

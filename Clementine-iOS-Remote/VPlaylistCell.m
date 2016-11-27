@@ -9,5 +9,11 @@
 #import "VPlaylistCell.h"
 
 @implementation VPlaylistCell
-
+- (void)setAllLabelsTextColorTo:(UIColor*)color {
+    self.labelAlbum.textColor = color;
+    self.labelTitle.textColor = color;
+    self.labelArtist.textColor = color;
+    self.labelLenght.textColor = color;
+    self.labelPosition.textColor = color;
+}
 @end

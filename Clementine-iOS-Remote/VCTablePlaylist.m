@@ -57,9 +57,9 @@
     }
 
     if (song.songId == [RemotePlayer sharedInstance].currentSong.songId) {
-        cell.contentView.backgroundColor = [UIColor grayColor];
+        [cell setAllLabelsTextColorTo:[UIColor orangeColor]];
     } else {
-        cell.contentView.backgroundColor = [UIColor blackColor];
+        [cell setAllLabelsTextColorTo:[UIColor whiteColor]];
     }
     return cell;
 }
