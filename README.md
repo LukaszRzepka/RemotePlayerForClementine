@@ -1,5 +1,10 @@
 # iOS RemotePlayer for Clementine
 
-![alt tag](https://github.com/LukaszRzepka/RemotePlayerForClementine/blob/master/IMG_0152.PNG)
+<br>
+<img height="400" src="https://github.com/LukaszRzepka/RemotePlayerForClementine/blob/master/IMG_0152.PNG" />
+<br>
 
-![alt tag](https://github.com/LukaszRzepka/RemotePlayerForClementine/blob/master/IMG_0153.PNG)
+<br>
+<img height="400" src="https://github.com/LukaszRzepka/RemotePlayerForClementine/blob/master/IMG_0153.PNG" />
+<br>
+
